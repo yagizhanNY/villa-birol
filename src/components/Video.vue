@@ -14,7 +14,7 @@ onMounted(async () => {
     <header class="flex w-full justify-center mt-4">
         <div class="relative w-[320px] h-[200px] md:w-[1024px] md:h-[512px]">
             <keep-alive>
-                <video class="w-full h-full object-cover rounded-md shadow-md" autoplay loop muted="true">
+                <video class="w-full h-full object-cover rounded-md shadow-md" controls="false" autoplay loop playsinline muted>
                     <source :src="videoUrl" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
