@@ -1,3 +1,6 @@
+<script setup lang="ts">
+import { FaInfoCircle } from "vue3-icons/fa";
+</script>
 <template>
     <div class="flex justify-center">
         <article class="prose lg:prose-lg mx-4 my-4 lg:mx-48">
@@ -25,6 +28,14 @@
                 today
                 and start planning your dream vacation.
             </p>
+
+            <div class="flex justify-center items-center flex-row gap-2">
+                <FaInfoCircle class="w-24 h-24"/>
+                <p class="">
+                This villa has a touristic rental residence permit by The Republic of Türkiye The Ministry of Culture and Tourism. You can <a class="font-bold" href="/documents/permit.pdf" download>download the permit here</a>.
+            </p>
+            </div>
+            
         </article>
     </div>
 </template>
