@@ -9,12 +9,6 @@ import { SiGooglemaps } from "vue3-icons/si";
             <RouterLink class="font-dancing text-[20px] md:text-[30px]" to="/">Villa Birol</RouterLink>
         </div>
         <div className="flex gap-3">
-            <a href="https://abnb.me/wesC39scgzb">
-                <a href="https://villasepeti.com/ev/villa-umberto" target="_blank">
-                    <img loading="lazy" class="w-8 h-8 rounded-full" src="/logos/villasepeti_logo.jpeg"
-                        alt="villa sepeti logo">
-                </a>
-            </a>
             <a href="mailto:birolyakali@hotmail.com">
                 <CiMail class="w-8 h-8"/>
             </a>
