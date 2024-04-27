@@ -1,7 +1,4 @@
-<script setup>
-const goToImages = () => {
-    this.$router.push('/images')
-}
+<script lang="ts" setup>
 </script>
 
 <template>
