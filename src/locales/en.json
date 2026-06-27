@@ -1,0 +1,90 @@
+{
+  "nav": {
+    "home": "Home",
+    "photos": "Gallery",
+    "contact": "Contact",
+    "reserve": "Reservation"
+  },
+  "hero": {
+    "subtitle": "Welcome to the Most Beautiful Villa Retreat in Fethiye",
+    "title": "VILLA BIROL",
+    "description": "An unforgettable holiday experience in the tranquil atmosphere of Çalış, Fethiye — with a private pool and breathtaking views.",
+    "cta_whatsapp": "Reserve via WhatsApp",
+    "cta_call": "Call Now",
+    "scroll_down": "Scroll Down"
+  },
+  "about": {
+    "label": "ABOUT US",
+    "title": "A Perfect Escape in the Serene Paradise of the Aegean",
+    "p1": "Our villa offers the unique beauty of Fethiye, located just 1.5 km from the pearl of Muğla — Çalış Beach. With 4 bedrooms and 3.5 bathrooms, it comfortably accommodates up to 8 guests.",
+    "p2": "Enjoy sunny days and evening dinners under the stars with our private pool and barbecue area. Local markets and shops are within walking distance, and our private parking keeps your vehicle safe throughout your stay.",
+    "p3": "With a fully equipped kitchen and a peaceful, quiet location, our villa is a true paradise of relaxation. Live your dream vacation here.",
+    "permit_text": "This villa holds a touristic rental residence permit from the Republic of Türkiye Ministry of Culture and Tourism.",
+    "permit_link": "Download the permit here",
+    "learn_more": "Learn More"
+  },
+  "amenities": {
+    "label": "AMENITIES",
+    "title": "Details Designed Especially for You",
+    "items": [
+      {
+        "icon": "pool",
+        "title": "Private Swimming Pool",
+        "desc": "Cool off in our spacious and well-maintained private pool, enjoying every moment of your vacation."
+      },
+      {
+        "icon": "kitchen",
+        "title": "Fully Equipped Kitchen",
+        "desc": "Prepare your own meals with complete kitchen equipment and experience the comfort of the villa."
+      },
+      {
+        "icon": "beach",
+        "title": "Close to Çalış Beach",
+        "desc": "Just 1.5 km from the famous Çalış Beach — easily reachable by bicycle or local shuttles."
+      },
+      {
+        "icon": "parking",
+        "title": "Private Parking",
+        "desc": "With our enclosed and secure private parking, your vehicle is in safe hands throughout your vacation."
+      },
+      {
+        "icon": "permit",
+        "title": "Licensed Tourist Rental",
+        "desc": "A secure villa with an official touristic rental permit approved by the T.R. Ministry of Culture and Tourism."
+      }
+    ]
+  },
+  "gallery": {
+    "label": "GALLERY",
+    "title": "Photo Gallery",
+    "see_all": "See All Photos",
+    "page_title": "Photo Gallery",
+    "page_subtitle": "Browse all photos of Villa Birol",
+    "back_home": "Back to Home"
+  },
+  "comments": {
+    "label": "GUEST REVIEWS",
+    "title": "What Our Guests Say"
+  },
+  "footer": {
+    "brand_desc": "A luxurious and peaceful holiday experience in Çalış, Fethiye.",
+    "quick_links": "QUICK LINKS",
+    "links": {
+      "home": "Home",
+      "gallery": "Gallery",
+      "about": "About",
+      "contact": "Contact"
+    },
+    "useful": "USEFUL LINKS",
+    "useful_links": {
+      "permit": "Touristic Rental Permit",
+      "maps": "View on Google Maps"
+    },
+    "contact_title": "CONTACT",
+    "phone": "+90 532 282 16 19",
+    "email": "birolyakali@hotmail.com",
+    "whatsapp_cta": "Message on WhatsApp",
+    "call_cta": "Call Now",
+    "copyright": "© 2024 Villa Birol. All rights reserved."
+  }
+}

@@ -1,11 +1,216 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
   <head>
     <meta charset="UTF-8">
     <link rel="icon" href="/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to Villa Birol, a luxurious villa located in a serene environment. Explore our site to learn more about our amenities and services.">
-    <title>Villa Birol</title>
+
+    <!-- ═══════════════════════════════════════════
+         PRIMARY META
+    ═══════════════════════════════════════════ -->
+    <title>Villa Birol — Fethiye Çalış'ta Özel Havuzlu Lüks Kiralık Villa</title>
+    <meta name="description" content="Fethiye Çalış'ta 4 yatak odalı, 8 kişilik, özel havuzlu lüks kiralık villa. Çalış Plajı'na 1,5 km. Turistik kiralama belgeli. WhatsApp ile rezervasyon: +90 532 282 16 19">
+    <meta name="author" content="Villa Birol">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.villabirol.com/">
+
+    <!-- ═══════════════════════════════════════════
+         OPEN GRAPH (Facebook, WhatsApp, LinkedIn)
+    ═══════════════════════════════════════════ -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Villa Birol">
+    <meta property="og:title" content="Villa Birol — Fethiye Çalış'ta Özel Havuzlu Lüks Kiralık Villa">
+    <meta property="og:description" content="4 yatak odalı, 8 kişilik özel havuzlu lüks villa. Çalış Plajı'na 1,5 km. Turistik kiralama belgeli. WhatsApp ile rezervasyon yapın.">
+    <meta property="og:url" content="https://www.villabirol.com/">
+    <meta property="og:image" content="https://www.villabirol.com/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Villa Birol — Fethiye Çalış özel havuzlu lüks villa">
+    <meta property="og:locale" content="tr_TR">
+    <meta property="og:locale:alternate" content="en_GB">
+
+    <!-- ═══════════════════════════════════════════
+         TWITTER CARD
+    ═══════════════════════════════════════════ -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Villa Birol — Fethiye Çalış'ta Lüks Kiralık Villa">
+    <meta name="twitter:description" content="4 yatak odalı, özel havuzlu lüks villa. Çalış Plajı'na 1,5 km. WhatsApp ile rezervasyon yapın.">
+    <meta name="twitter:image" content="https://www.villabirol.com/og-image.jpg">
+
+    <!-- ═══════════════════════════════════════════
+         GEO / LOCAL SEO
+    ═══════════════════════════════════════════ -->
+    <meta name="geo.region" content="TR-48">
+    <meta name="geo.placename" content="Fethiye, Muğla, Türkiye">
+    <meta name="geo.position" content="36.6553;29.1076">
+    <meta name="ICBM" content="36.6553, 29.1076">
+
+    <!-- ═══════════════════════════════════════════
+         HREFLANG (TR / EN)
+    ═══════════════════════════════════════════ -->
+    <link rel="alternate" hreflang="tr" href="https://www.villabirol.com/">
+    <link rel="alternate" hreflang="en" href="https://www.villabirol.com/">
+    <link rel="alternate" hreflang="x-default" href="https://www.villabirol.com/">
+
+    <!-- ═══════════════════════════════════════════
+         GOOGLE FONTS PRECONNECT
+    ═══════════════════════════════════════════ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- ═══════════════════════════════════════════
+         JSON-LD STRUCTURED DATA
+    ═══════════════════════════════════════════ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "VacationRental",
+      "name": "Villa Birol",
+      "description": "Fethiye Çalış'ta 4 yatak odalı, 8 kişilik özel havuzlu lüks kiralık villa. Çalış Plajı'na 1.5 km mesafede, turistik kiralama belgeli.",
+      "url": "https://www.villabirol.com",
+      "telephone": "+905322821619",
+      "email": "birolyakali@hotmail.com",
+      "image": [
+        "https://www.villabirol.com/og-image.jpg"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Çalış",
+        "addressLocality": "Fethiye",
+        "addressRegion": "Muğla",
+        "postalCode": "48300",
+        "addressCountry": "TR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 36.6553,
+        "longitude": 29.1076
+      },
+      "checkinTime": "15:00",
+      "checkoutTime": "11:00",
+      "numberOfRooms": 4,
+      "petsAllowed": false,
+      "priceRange": "$$",
+      "currenciesAccepted": "TRY, EUR",
+      "amenityFeature": [
+        { "@type": "LocationFeatureSpecification", "name": "Private Swimming Pool", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Private Parking", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Fully Equipped Kitchen", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "BBQ Area", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Air Conditioning", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "WiFi", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Washing Machine", "value": true }
+      ],
+      "containsPlace": {
+        "@type": "Accommodation",
+        "name": "Villa Birol",
+        "numberOfBedrooms": 4,
+        "numberOfBathroomsTotal": 3,
+        "occupancy": {
+          "@type": "QuantitativeValue",
+          "maxValue": 8
+        },
+        "amenityFeature": [
+          { "@type": "LocationFeatureSpecification", "name": "Private Pool", "value": true }
+        ]
+      },
+      "tourismType": ["BeachTourism", "FamilyTourism", "LuxuryTourism"],
+      "sameAs": [
+        "https://villasepeti.com/home/fethiye/villa-umberto",
+        "https://maps.app.goo.gl/5NvPCiquYHeWyhDk8"
+      ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Villa Birol kaç kişiliktir?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Villa Birol, 4 yatak odası ve 3,5 banyosuyla maksimum 8 kişiye konforlu konaklama imkânı sunmaktadır."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Villa Birol'da özel havuz var mı?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Evet, Villa Birol'da size özel büyük bir açık yüzme havuzu bulunmaktadır."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Villa Birol Çalış Plajı'na ne kadar uzaklıktadır?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Villa Birol, ünlü Çalış Plajı'na yaklaşık 1,5 km mesafededir. Plaja bisikletle veya yerel dolmuş servisiyle kolayca ulaşabilirsiniz."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Villa Birol'a nasıl rezervasyon yapabilirim?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Rezervasyonlar doğrudan WhatsApp (+90 532 282 16 19) veya telefon aracılığıyla yapılmaktadır. Online rezervasyon formu bulunmamaktadır."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Villa Birol turistik kiralama belgesi var mı?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Evet, Villa Birol; T.C. Kültür ve Turizm Bakanlığı tarafından verilmiş resmi turistik kiralama residence iznine sahiptir."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Villa Birol'un giriş ve çıkış saatleri nelerdir?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Giriş saati 15:00, çıkış saati ise 11:00'dir."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Villa Birol'da otopark var mı?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Evet, Villa Birol'da kapalı ve güvenli özel otopark bulunmaktadır."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many people can stay at Villa Birol?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Villa Birol accommodates up to 8 guests across 4 bedrooms and 3.5 bathrooms."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Villa Birol have a private pool?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Villa Birol features a large private outdoor swimming pool exclusively for guests."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How far is Villa Birol from Çalış Beach?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Villa Birol is approximately 1.5 km from the famous Çalış Beach, easily reachable by bicycle or local dolmuş shuttle service."
+          }
+        }
+      ]
+    }
+    </script>
+
   </head>
   <body>
     <div id="app"></div>

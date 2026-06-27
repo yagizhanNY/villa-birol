@@ -1,0 +1,90 @@
+{
+  "nav": {
+    "home": "Anasayfa",
+    "photos": "Galeri",
+    "contact": "İletişim",
+    "reserve": "Rezervasyon"
+  },
+  "hero": {
+    "subtitle": "Fethiye'deki En Güzel Villa Kaçamağınıza Hoş Geldiniz",
+    "title": "VILLA BIROL",
+    "description": "Fethiye, Çalış'ın sakin atmosferinde, özel havuzu ve muhteşem manzarasıyla unutulmaz bir tatil deneyimi.",
+    "cta_whatsapp": "WhatsApp ile Rezervasyon",
+    "cta_call": "Hemen Ara",
+    "scroll_down": "Aşağı Kaydır"
+  },
+  "about": {
+    "label": "HAKKIMIZDA",
+    "title": "Ege'nin Sakin Cennetinde Kusursuz bir Deneyim",
+    "p1": "Fethiye'nin eşsiz güzelliğini sunan villamız, Muğla'nın incisi Çalış sahiline 1,5 km mesafede yer almaktadır. 4 yatak odası ve 3,5 banyosuyla 8 kişiye kadar konforlu bir konaklama imkânı sunmaktadır.",
+    "p2": "Özel havuzumuz ve barbekü alanımızla güneşli günlerin ve yıldızlar altında akşam yemeklerinin tadını çıkarın. Yerel marketlere ve dükkanlar yürüme mesafesindedir, özel otopark ile aracınız her zaman güvende.",
+    "p3": "Villamız; tam donanımlı mutfağı, huzurlu ve sakin konumuyla sizin için gerçek bir dinlenme cenneti. Hayalinizdeki tatili burada yaşayın.",
+    "permit_text": "Bu villa, T.C. Kültür ve Turizm Bakanlığı tarafından verilmiş turistik kiralama residence iznine sahiptir.",
+    "permit_link": "İzni buradan indirin",
+    "learn_more": "Daha Fazla"
+  },
+  "amenities": {
+    "label": "OLANAKLARIMIZ",
+    "title": "Sizin İçin Düşünülen Detaylar",
+    "items": [
+      {
+        "icon": "pool",
+        "title": "Özel Yüzme Havuzu",
+        "desc": "Geniş ve bakımlı özel havuzumuzda serinleyin, tatilinizin her anını keyifle geçirin."
+      },
+      {
+        "icon": "kitchen",
+        "title": "Tam Donanımlı Mutfak",
+        "desc": "Eksiksiz mutfak ekipmanlarıyla kendi yemeklerinizi hazırlayın, villanın konforunu yaşayın."
+      },
+      {
+        "icon": "beach",
+        "title": "Çalış Plajına Yakın",
+        "desc": "Ünlü Çalış Plajı'na yalnızca 1,5 km mesafede; bisiklet veya servislerle kolayca ulaşabilirsiniz."
+      },
+      {
+        "icon": "parking",
+        "title": "Özel Otopark",
+        "desc": "Kapalı ve güvenli özel otoparklarımızla aracınız tatiliniz boyunca emin ellerde."
+      },
+      {
+        "icon": "permit",
+        "title": "Turistik Kiralama Belgeli",
+        "desc": "T.C. Kültür ve Turizm Bakanlığı onaylı, resmi turistik kiralama iznine sahip güvenli villa."
+      }
+    ]
+  },
+  "gallery": {
+    "label": "GALERİ",
+    "title": "Fotoğraf Galerisi",
+    "see_all": "Tümünü Gör",
+    "page_title": "Fotoğraf Galerisi",
+    "page_subtitle": "Villa Birol'un tüm fotoğraflarına göz atın",
+    "back_home": "Anasayfaya Dön"
+  },
+  "comments": {
+    "label": "MÜŞTERİ YORUMLARI",
+    "title": "Misafirlerimiz Ne Diyor?"
+  },
+  "footer": {
+    "brand_desc": "Fethiye, Çalış'ta lüks ve huzurlu tatil deneyimi.",
+    "quick_links": "HIZLI BAĞLANTILAR",
+    "links": {
+      "home": "Anasayfa",
+      "gallery": "Galeri",
+      "about": "Hakkımızda",
+      "contact": "İletişim"
+    },
+    "useful": "FAYDALI BAĞLANTILAR",
+    "useful_links": {
+      "permit": "Turistik Kiralama İzni",
+      "maps": "Google Maps'te Gör"
+    },
+    "contact_title": "İLETİŞİM",
+    "phone": "+90 532 282 16 19",
+    "email": "birolyakali@hotmail.com",
+    "whatsapp_cta": "WhatsApp'tan Yazın",
+    "call_cta": "Hemen Ara",
+    "copyright": "© 2024 Villa Birol. Tüm hakları saklıdır."
+  }
+}

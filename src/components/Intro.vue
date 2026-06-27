@@ -1,41 +1,75 @@
 <script setup lang="ts">
-import { FaInfoCircle } from "vue3-icons/fa";
+import { onMounted, ref } from 'vue'
+import { getAllImages } from '@/services/contentfulService'
+import { useI18n } from '../i18n'
+import { FaDownload } from 'vue3-icons/fa'
+
+const { t } = useI18n()
+const featuredImg = ref('')
+
+onMounted(async () => {
+  try {
+    const images = await getAllImages()
+    if (images.length > 0) featuredImg.value = images[0].url
+  } catch (e) {
+    // no image
+  }
+})
 </script>
+
 <template>
-    <div class="flex justify-center">
-        <article class="prose lg:prose-lg mx-4 my-4 lg:mx-48">
-            <p>Welcome to our stunning villa located in the beautiful city of Muğla, Fethiye. With 4 bedrooms and 3.5
-                bathrooms, our villa is the perfect accommodation for families or groups of up to 8 people.</p>
+  <section id="about" class="bg-cream py-20 lg:py-28">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
-            <p>Enjoy the ultimate relaxation with our private pool and BBQ area, perfect for a day in the sun or an
-                evening
-                meal under the stars. You'll also love the close proximity to the famous Çalış beach, just 1.5 km away,
-                where
-                you can soak up the sun and take a dip in the crystal-clear waters.</p>
+        <!-- Text Column -->
+        <div class="order-2 lg:order-1">
+          <p class="section-label">{{ t('about.label') }}</p>
+          <h2 class="section-title mb-4">{{ t('about.title') }}</h2>
+          <div class="gold-divider"></div>
 
-            <p>Conveniently located near markets, you can easily walk to the local grocery stores and shops to stock up
-                on
-                supplies. Our private car park ensures that you'll have a safe and secure place to park your vehicle.
+          <div class="space-y-4 text-gray-600 leading-relaxed text-[15px]">
+            <p>{{ t('about.p1') }}</p>
+            <p>{{ t('about.p2') }}</p>
+            <p>{{ t('about.p3') }}</p>
+          </div>
+
+          <!-- Permit notice -->
+          <div class="mt-8 flex items-start gap-3 bg-white border border-gold/30 rounded-lg p-4">
+            <FaDownload class="w-5 h-5 text-gold mt-0.5 flex-shrink-0" />
+            <p class="text-sm text-gray-600 leading-snug">
+              {{ t('about.permit_text') }}
+              <a
+                href="/documents/permit.pdf"
+                download
+                class="text-gold font-semibold hover:underline ml-1"
+              >{{ t('about.permit_link') }}</a>.
             </p>
+          </div>
+        </div>
 
-            <p>Our villa is a peaceful retreat in a quiet location, perfect for a relaxing getaway. The fully equipped
-                kitchen
-                is ready for use, so you can prepare delicious meals and enjoy them in the comfort of your own villa.
-            </p>
-
-            <p>
-                Experience the beauty and tranquility of Fethiye at our villa, your home away from home. Book your stay
-                today
-                and start planning your dream vacation.
-            </p>
-
-            <div class="flex justify-center items-center flex-row gap-2">
-                <FaInfoCircle class="w-24 h-24"/>
-                <p class="">
-                This villa has a touristic rental residence permit by The Republic of Türkiye The Ministry of Culture and Tourism. You can <a class="font-bold" href="/documents/permit.pdf" download>download the permit here</a>.
-            </p>
+        <!-- Image Column -->
+        <div class="order-1 lg:order-2">
+          <div class="relative">
+            <div
+              class="absolute -top-4 -right-4 w-full h-full border-2 border-gold/30 rounded-lg pointer-events-none"
+            ></div>
+            <img
+              v-if="featuredImg"
+              :src="featuredImg"
+              alt="Villa Birol interior"
+              class="w-full h-80 lg:h-[480px] object-cover rounded-lg shadow-2xl relative z-10"
+            />
+            <div
+              v-else
+              class="w-full h-80 lg:h-[480px] bg-navy-light rounded-lg shadow-2xl relative z-10 flex items-center justify-center"
+            >
+              <span class="text-white/30 text-lg font-display">Villa Birol</span>
             </div>
-            
-        </article>
+          </div>
+        </div>
+
+      </div>
     </div>
+  </section>
 </template>
