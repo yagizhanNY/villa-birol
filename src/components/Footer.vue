@@ -78,7 +78,7 @@ const currentYear = new Date().getFullYear()
           </li>
           <li>
             <a
-              href="https://maps.app.goo.gl/5NvPCiquYHeWyhDk8"
+              href="https://maps.app.goo.gl/Jm7WVdSPbbiZ21c37"
               target="_blank"
               rel="noopener"
               class="text-white/60 hover:text-gold text-sm transition-colors"
