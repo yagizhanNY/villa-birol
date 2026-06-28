@@ -24,10 +24,20 @@ export default defineConfig(({ mode }) => {
                 for (const event of Object.values(events)) {
                   if (event && event.type === 'VEVENT') {
                     const vEvent = event as any;
-                    // Include all events (free/busy mode Google Calendar exports busy events as VEVENT)
+                    let startStr = vEvent.start.toISOString();
+                    let endStr = vEvent.end.toISOString();
+                    
+                    if (vEvent.datetype === 'date') {
+                      const s = vEvent.start;
+                      startStr = `${s.getUTCFullYear()}-${String(s.getUTCMonth() + 1).padStart(2, '0')}-${String(s.getUTCDate()).padStart(2, '0')}`;
+                      
+                      const e = new Date(vEvent.end.getTime() - 24 * 60 * 60 * 1000);
+                      endStr = `${e.getUTCFullYear()}-${String(e.getUTCMonth() + 1).padStart(2, '0')}-${String(e.getUTCDate()).padStart(2, '0')}`;
+                    }
+
                     busyDates.push({
-                      start: vEvent.start.toISOString(),
-                      end: vEvent.end.toISOString(),
+                      start: startStr,
+                      end: endStr,
                     });
                   }
                 }

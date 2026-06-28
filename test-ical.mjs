@@ -15,8 +15,9 @@ async function test() {
   const events = await ical.async.parseICS(icsData);
   for (const event of Object.values(events)) {
     if (event.type === 'VEVENT') {
-      console.log('Start:', event.start.toISOString());
-      console.log('End:', event.end.toISOString());
+      console.log('Event:', event.summary);
+      console.log('Start:', event.start, 'datetype:', event.datetype);
+      console.log('End:', event.end, 'datetype:', event.datetype);
     }
   }
 }

@@ -33,9 +33,23 @@ export default async function handler(req: any, res: any) {
       const events = await ical.async.fromURL(CALENDAR_URL);
       for (const event of Object.values(events)) {
         if (event.type === 'VEVENT') {
+          let startStr = event.start.toISOString();
+          let endStr = event.end.toISOString();
+
+          // All-day events in iCal have exclusive end dates (the day after).
+          // We need to subtract 1 day from the end date to make it inclusive,
+          // and format them as YYYY-MM-DD so the frontend doesn't shift them by timezone.
+          if ((event as any).datetype === 'date') {
+            const s = event.start;
+            startStr = `${s.getUTCFullYear()}-${String(s.getUTCMonth() + 1).padStart(2, '0')}-${String(s.getUTCDate()).padStart(2, '0')}`;
+            
+            const e = new Date(event.end.getTime() - 24 * 60 * 60 * 1000);
+            endStr = `${e.getUTCFullYear()}-${String(e.getUTCMonth() + 1).padStart(2, '0')}-${String(e.getUTCDate()).padStart(2, '0')}`;
+          }
+
           busyDates.push({
-            start: event.start.toISOString(),
-            end: event.end.toISOString(),
+            start: startStr,
+            end: endStr,
           });
         }
       }
