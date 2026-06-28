@@ -22,7 +22,7 @@ const fetchCalendar = async () => {
   try {
     isLoading.value = true
     error.value = null
-    const response = await fetch('/api/calendar')
+    const response = await fetch('/api/calendar', { cache: 'no-store' })
     if (!response.ok) throw new Error('Failed to fetch calendar')
     
     const data = await response.json()
