@@ -23,6 +23,13 @@
     "permit_link": "İzni buradan indirin",
     "learn_more": "Daha Fazla"
   },
+  "calendar": {
+    "label": "MÜSAİTLİK DURUMU",
+    "title": "Gerçek Zamanlı Takvim",
+    "booked": "Dolu",
+    "checkIn": "Giriş Günü (Yarım Gün)",
+    "checkOut": "Çıkış Günü (Yarım Gün)"
+  },
   "amenities": {
     "label": "OLANAKLARIMIZ",
     "title": "Sizin İçin Düşünülen Detaylar",

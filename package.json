@@ -13,7 +13,9 @@
   "dependencies": {
     "@vercel/analytics": "^2.0.1",
     "@vercel/speed-insights": "^2.0.0",
+    "node-ical": "^0.26.1",
     "swiper": "^11.1.1",
+    "v-calendar": "^3.1.2",
     "vue": "^3.4.21",
     "vue-easy-lightbox": "^1.19.0",
     "vue-router": "^4.3.2",

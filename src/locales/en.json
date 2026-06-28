@@ -23,6 +23,13 @@
     "permit_link": "Download the permit here",
     "learn_more": "Learn More"
   },
+  "calendar": {
+    "label": "AVAILABILITY",
+    "title": "Real-time Calendar",
+    "booked": "Booked",
+    "checkIn": "Check-in Day",
+    "checkOut": "Check-out Day"
+  },
   "amenities": {
     "label": "AMENITIES",
     "title": "Details Designed Especially for You",
