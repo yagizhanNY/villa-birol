@@ -86,6 +86,7 @@ const attributes = computed(() => {
 
         <div v-else class="w-full max-w-4xl calendar-container flex justify-center">
           <Calendar
+            :key="locale"
             :attributes="attributes"
             :columns="columns"
             :locale="locale"
