@@ -41,10 +41,10 @@ export default async function handler(req: any, res: any) {
           // and format them as YYYY-MM-DD so the frontend doesn't shift them by timezone.
           if ((event as any).datetype === 'date') {
             const s = event.start;
-            startStr = `${s.getUTCFullYear()}-${String(s.getUTCMonth() + 1).padStart(2, '0')}-${String(s.getUTCDate()).padStart(2, '0')}`;
+            startStr = `${s.getFullYear()}-${String(s.getMonth() + 1).padStart(2, '0')}-${String(s.getDate()).padStart(2, '0')}`;
             
             const e = new Date(event.end.getTime() - 24 * 60 * 60 * 1000);
-            endStr = `${e.getUTCFullYear()}-${String(e.getUTCMonth() + 1).padStart(2, '0')}-${String(e.getUTCDate()).padStart(2, '0')}`;
+            endStr = `${e.getFullYear()}-${String(e.getMonth() + 1).padStart(2, '0')}-${String(e.getDate()).padStart(2, '0')}`;
           }
 
           busyDates.push({

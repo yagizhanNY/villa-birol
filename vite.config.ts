@@ -29,10 +29,10 @@ export default defineConfig(({ mode }) => {
                     
                     if (vEvent.datetype === 'date') {
                       const s = vEvent.start;
-                      startStr = `${s.getUTCFullYear()}-${String(s.getUTCMonth() + 1).padStart(2, '0')}-${String(s.getUTCDate()).padStart(2, '0')}`;
+                      startStr = `${s.getFullYear()}-${String(s.getMonth() + 1).padStart(2, '0')}-${String(s.getDate()).padStart(2, '0')}`;
                       
                       const e = new Date(vEvent.end.getTime() - 24 * 60 * 60 * 1000);
-                      endStr = `${e.getUTCFullYear()}-${String(e.getUTCMonth() + 1).padStart(2, '0')}-${String(e.getUTCDate()).padStart(2, '0')}`;
+                      endStr = `${e.getFullYear()}-${String(e.getMonth() + 1).padStart(2, '0')}-${String(e.getDate()).padStart(2, '0')}`;
                     }
 
                     busyDates.push({
